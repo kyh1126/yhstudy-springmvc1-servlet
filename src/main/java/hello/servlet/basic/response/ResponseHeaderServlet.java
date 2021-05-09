@@ -22,7 +22,7 @@ public class ResponseHeaderServlet extends HttpServlet {
         //[response-headers]
         response.setHeader("Content-Type", "text/plain;charset=utf-8");
         // 캐시를 아예 무효화하겠다 정의
-        response.setHeader("Cache-Control", "no-cache, no-store, must- revalidate");
+        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
         response.setHeader("Pragma", "no-cache"); // 과거 버전까지 캐시 무효화해주는 부분
         response.setHeader("my-header", "hello");
 
